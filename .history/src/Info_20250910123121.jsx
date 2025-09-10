@@ -1,8 +1,8 @@
 function Info (props) {
     return (
-        <div> 
+        <button> 
             <a href={props.info} target="_blank"> Learn More </a> 
-        </div>
+        </button>
     );
     }
 export default Info;

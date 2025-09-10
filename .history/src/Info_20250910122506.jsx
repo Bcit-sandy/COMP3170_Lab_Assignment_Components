@@ -1,6 +1,6 @@
 function Info (props) {
     return (
-        <div> 
+        <div>
             <a href={props.info} target="_blank"> Learn More </a> 
         </div>
     );

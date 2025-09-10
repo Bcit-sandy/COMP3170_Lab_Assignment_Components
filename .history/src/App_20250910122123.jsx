@@ -12,17 +12,17 @@ function App() {
         <p>Welcome to the Book Catalog App! </p>
         <p>Please free to click at the "Learn More" button to view detailed information of each book! </p>
           <div>
-            <New />
-            <Book 
-            cover="https://itbook.store/img/books/9781098116828.png" 
-            author="By Justin Domingus, John Arundel"
-            info="https://itbook.store/books/9781098116828"/>
+          <New />
+          <Book 
+          cover="https://itbook.store/img/books/9781098116828.png" 
+          author="By Justin Domingus, John Arundel"
+          link="https://itbook.store/books/9781098116828"/>
 
-            <Book 
-            cover="https://itbook.store/img/books/9781098126247.png" 
-            author="By Derek DeJonghe" 
-            info="https://itbook.store/books/9781098126247"/>
-            </div>
+          <Book 
+          cover="https://itbook.store/img/books/9781098126247.png" 
+          author="By Derek DeJonghe" 
+          link="https://itbook.store/books/9781098126247"/>
+          </div>
       </main>
 
       <div>

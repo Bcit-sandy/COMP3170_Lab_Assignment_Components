@@ -1,4 +1,4 @@
-import Info from "./Info";
+
 
 function Book(props) {
   return (
@@ -8,7 +8,12 @@ function Book(props) {
       </div>
 
       <p>{props.author}</p>
-      <Info info={props.info} />
+
+      <div> 
+        <p>
+            <a href={props.info} target="_blank"> Learn More </a>
+        </p> 
+        </div>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import Info from "./Info";
+
 
 function Book(props) {
   return (
@@ -8,7 +8,8 @@ function Book(props) {
       </div>
 
       <p>{props.author}</p>
-      <Info info={props.info} />
+
+      <Info/>
     </div>
   );
 }

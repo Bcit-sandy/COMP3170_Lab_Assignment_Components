@@ -16,12 +16,12 @@ function App() {
             <Book 
             cover="https://itbook.store/img/books/9781098116828.png" 
             author="By Justin Domingus, John Arundel"
-            info="https://itbook.store/books/9781098116828"/>
+            link="https://itbook.store/books/9781098116828"/>
 
             <Book 
             cover="https://itbook.store/img/books/9781098126247.png" 
             author="By Derek DeJonghe" 
-            info="https://itbook.store/books/9781098126247"/>
+            link="https://itbook.store/books/9781098126247"/>
             </div>
       </main>
 
