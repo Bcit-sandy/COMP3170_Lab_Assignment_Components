@@ -110,7 +110,6 @@
   height: 50px;
   font-weight: bold;
   text-align: center;
-  padding: 5px 0;
 }
 
 .Info-container {
@@ -137,7 +136,7 @@
 }
 
 .Info-link:hover {
-  color: var(--dark-blue-color);
-  text-decoration: underline;
-  font-size: 16px;
+  color: var(--blue-color);
+  background-color: var(--dark-blue-color);
+  box-shadow: 0 0 10px 0 var(--blue-color);
 }

@@ -14,21 +14,25 @@ function App() {
           <p className="App-main-content-text">Feel free to click at <span className="Learn-more">Learn More</span> to view detailed information of each book! 📖 </p>
         </div>
 
-        <div className="App-content-container">
+        <div className="App-main-content">
             <New />
             <Book 
             cover="book1.png"
             alt="Cloud Native DevOps with Kubernetes" 
-            author="by Justin Domingus, John Arundel"
+            author="By Justin Domingus, John Arundel"
             info="https://itbook.store/books/9781098116828"/>
 
             <Book 
             cover="book2.png"
             alt="NGINX Cookbook" 
-            author="by Derek DeJonghe" 
+            author="By Derek DeJonghe" 
             info="https://itbook.store/books/9781098126247"/>
-          </div>
+            </div>
       </main>
+
+      <div>
+
+      </div>
 
       <footer>
         <p>&copy; Sandy Chow, Set G, 2025</p>

@@ -55,6 +55,7 @@
   background-color: var(--white-color);
   color: var(--blue-color);
   border: 3px solid var(--light-blue-color);
+  padding: 10px 20px;
   border-radius: 10px;
   width: 200px;
   height: 300px;
@@ -70,7 +71,6 @@
 .New-button:hover {
   background-color: var(--blue-color);
   color: var(--white-color);
-  box-shadow: 0 0 10px 0 var(--blue-color);
 }
 
 .App-content-container {
@@ -81,63 +81,19 @@
   gap: 20px;
 }
 
-.Book-container {
+.Book-cover {
   width: 200px;
   height: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 1px solid var(--dark-blue-color);
-  background-color: var(--blue-color);
-}
-
-.Book-cover {
-  width: 100%;
-  height: 100%;
 }
 
 .Book-cover-image {
   width: 100%;
   height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
 .Book-author {
-  font-size: 14px;
-  background-color: var(--white-color);
-  color: var(--dark-blue-color);
-  margin: 0;
-  width: 100%;
-  height: 50px;
-  font-weight: bold;
-  text-align: center;
-  padding: 5px 0;
-}
-
-.Info-container {
-  width: 100%;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.Info-link {
-  font-size: 14px;
-  color: var(--blue-color);
-  background-color: var(--light-blue-color);
-  width: 100%;
-  height: 100%;
-  font-weight: bold;
-  text-decoration: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.Info-link:hover {
-  color: var(--dark-blue-color);
-  text-decoration: underline;
   font-size: 16px;
+  color: var(--dark-blue-color);
 }

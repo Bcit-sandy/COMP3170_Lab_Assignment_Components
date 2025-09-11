@@ -2,7 +2,7 @@ import Info from "./Info";
 
 function Book(props) {
   return (
-    <div className="Book-container">
+    <div>
       <div className="Book-cover">
         <img className="Book-cover-image" src={props.cover} alt={props.alt} />
       </div>

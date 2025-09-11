@@ -25,7 +25,7 @@ function App() {
             <Book 
             cover="book2.png"
             alt="NGINX Cookbook" 
-            author="by Derek DeJonghe" 
+            author="By Derek DeJonghe" 
             info="https://itbook.store/books/9781098126247"/>
           </div>
       </main>

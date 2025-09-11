@@ -19,13 +19,13 @@ function App() {
             <Book 
             cover="book1.png"
             alt="Cloud Native DevOps with Kubernetes" 
-            author="by Justin Domingus, John Arundel"
+            author="By Justin Domingus, John Arundel"
             info="https://itbook.store/books/9781098116828"/>
 
             <Book 
             cover="book2.png"
             alt="NGINX Cookbook" 
-            author="by Derek DeJonghe" 
+            author="By Derek DeJonghe" 
             info="https://itbook.store/books/9781098126247"/>
           </div>
       </main>
