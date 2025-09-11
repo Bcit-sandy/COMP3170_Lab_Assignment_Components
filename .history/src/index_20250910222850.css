@@ -1,17 +1,9 @@
-:root {
-  --light-blue-color: #CBD9E6;
-  --blue-color: #567cbd;
-  --beige-color: #f5efeb;
-  --dark-blue-color: #2f4156;
-  --white-color: #ffffff;
-}
-
 *{
-  font-family: Helvetica, sans-serif
+  font-family: Helvetica, sans-serif;
 }
 
 .App-header {
-  background-color:var(--light-blue-color);
+  background-color:rgb(136, 184, 204);
   min-height: 10vh;
   display: flex;
   flex-direction: column;
@@ -21,11 +13,11 @@
 
 .App-name {
   font-size: 30px;
-  color: var(--blue-color);
+  color: rgb(255, 255, 255);
 }
 
 .App-main {
-  background-color:var(--beige-color);
+  background-color:rgb(238, 243, 246);
   min-height: 70vh;
   display: flex;
   flex-direction: column;
@@ -33,7 +25,7 @@
 }
 
 .App-main-content {
-  background-color:var(--white-color);
+  background-color:rgb(238, 243, 246);
   min-height: 10vh;
   width: 100%;
   display: flex;
@@ -41,12 +33,7 @@
   align-items: center;
 }
 
-.Learn-more {
-  color: var(--blue-color);
-  font-weight: bold;
-}
-
 .App-main-content-text {
   font-size: 16px;
-  color: var(--dark-blue-color);
+  color: rgb(0, 0, 0);
 }

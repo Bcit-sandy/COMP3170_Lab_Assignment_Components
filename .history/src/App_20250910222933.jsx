@@ -10,8 +10,8 @@ function App() {
 
       <main className="App-main">
         <div className="App-main-content">
-          <p className="App-main-content-text">Welcome to the Book Catalog App! 📕 📙 📒 📗 📘  </p>
-          <p className="App-main-content-text">Feel free to click at <span className="Learn-more">Learn More</span> to view detailed information of each book! 📖 </p>
+          <p className="App-main-content-text">Welcome to the Book Catalog App! </p>
+          <p className="App-main-content-text">Please free to click at the "Learn More"to view detailed information of each book! </p>
         </div>
 
         <div className="">

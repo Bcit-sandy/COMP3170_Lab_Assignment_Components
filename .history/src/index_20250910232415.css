@@ -2,7 +2,8 @@
   --light-blue-color: #CBD9E6;
   --blue-color: #567cbd;
   --beige-color: #f5efeb;
-  --dark-blue-color: #2f4156;
+  --dark-blue-color: #2f4158;
+  --black-color: #000000;
   --white-color: #ffffff;
 }
 
@@ -33,7 +34,7 @@
 }
 
 .App-main-content {
-  background-color:var(--white-color);
+  background-color:var(--tertiary-color);
   min-height: 10vh;
   width: 100%;
   display: flex;
@@ -42,11 +43,11 @@
 }
 
 .Learn-more {
-  color: var(--blue-color);
+  color: var(--text-color);
   font-weight: bold;
 }
 
 .App-main-content-text {
   font-size: 16px;
-  color: var(--dark-blue-color);
+  color: var(--text-color);
 }
