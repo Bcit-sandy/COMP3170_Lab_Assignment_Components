@@ -107,10 +107,9 @@ body {
   gap: 2rem;
   margin: 2rem 0;
   width: 100%;
-  height: auto;
   flex-wrap: wrap;
   padding: 0 1rem;
-  margin-bottom: 10vh;
+  align-items: flex-start;
 }
 
 .Book-container {
@@ -211,4 +210,101 @@ body {
   border-top: 1px solid var(--light-blue-color);
   font-weight: 500;
   font-size: 16px;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Tablet and smaller screens */
+@media (max-width: 768px) {
+  .App-name {
+    font-size: 2rem;
+  }
+  
+  .App-main {
+    padding: 1rem 0;
+  }
+  
+  .App-main-content {
+    margin: 0.5rem;
+    padding: 1.5rem;
+    max-width: 95%;
+  }
+  
+  .App-content-container {
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+    padding: 0 0.5rem;
+  }
+  
+  .New-button {
+    width: 180px;
+    height: 270px;
+    font-size: 1.1rem;
+  }
+  
+  .Book-container {
+    width: 180px;
+    height: 270px;
+  }
+  
+  .App-main-content-text {
+    font-size: 15px;
+    max-width: 90%;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .App-name {
+    font-size: 1.8rem;
+  }
+  
+  .App-main {
+    padding: 0.5rem 0;
+  }
+  
+  .App-main-content {
+    margin: 0.25rem;
+    padding: 1rem;
+    max-width: 98%;
+  }
+  
+  .App-content-container {
+    gap: 1rem;
+    margin: 1rem 0;
+    padding: 0 0.25rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .New-button {
+    width: 160px;
+    height: 240px;
+    font-size: 1rem;
+  }
+  
+  .Book-container {
+    width: 160px;
+    height: 240px;
+  }
+  
+  .App-main-content-text {
+    font-size: 14px;
+    max-width: 95%;
+  }
+  
+  .Book-author {
+    font-size: 0.8rem;
+    height: 50px;
+    padding: 0.5rem 0.25rem;
+  }
+  
+  .Info-link {
+    font-size: 0.8rem;
+  }
+  
+  .App-footer {
+    font-size: 14px;
+    height: 8vh;
+  }
 }

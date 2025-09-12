@@ -109,8 +109,7 @@ body {
   width: 100%;
   height: auto;
   flex-wrap: wrap;
-  padding: 0 1rem;
-  margin-bottom: 10vh;
+  padding: 1rem 0;
 }
 
 .Book-container {
