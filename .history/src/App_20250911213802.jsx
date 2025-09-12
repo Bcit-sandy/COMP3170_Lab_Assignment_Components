@@ -30,7 +30,7 @@ function App() {
           </div>
       </main>
 
-      <footer className="App-footer">
+      <footer>
         <p>&copy; Sandy Chow, Set G, 2025</p>
       </footer> 
     </div>

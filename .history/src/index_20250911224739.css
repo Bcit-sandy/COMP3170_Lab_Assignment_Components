@@ -96,8 +96,6 @@ body {
 .New-button:hover {
   background-color: var(--blue-color);
   color: var(--white-color);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  transform: translateY(-2px);
 }
 
 .App-content-container {
@@ -126,7 +124,6 @@ body {
 
 .Book-container:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .Book-cover {

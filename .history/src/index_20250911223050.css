@@ -4,6 +4,8 @@
   --beige-color: #f5efeb;
   --dark-blue-color: #2f4156;
   --white-color: #ffffff;
+  --shadow-light: rgba(0, 0, 0, 0.1);
+  --shadow-medium: rgba(0, 0, 0, 0.15);
 }
 
 *{
@@ -28,6 +30,10 @@ body {
 .App-name {
   font-size: 2.5rem;
   color: var(--blue-color);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  text-shadow: 0 1px 2px var(--shadow-light);
+  margin: 0;
 }
 
 .App-main {
@@ -50,12 +56,14 @@ body {
   justify-content: center;
   padding: 2rem;
   border-radius: 12px;
+  box-shadow: 0 4px 20px var(--shadow-light);
   margin: 1rem;
-  max-width: 1000px;
+  max-width: 1200px;
 }
 
 .Learn-more {
   color: var(--blue-color);
+  font-weight: 600;
   text-decoration: none;
   transition: all 0.3s ease;
 }
@@ -66,7 +74,7 @@ body {
 }
 
 .App-main-content-text {
-  font-size: 16px;
+  font-size: 1.1rem;
   color: var(--dark-blue-color);
   font-weight: 400;
   text-align: center;
@@ -85,7 +93,7 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   font-size: 1.25rem;
   font-weight: 600;
   box-shadow: 0 4px 12px var(--shadow-light);
@@ -93,10 +101,26 @@ body {
   overflow: hidden;
 }
 
+.New-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.5s;
+}
+
+.New-button:hover::before {
+  left: 100%;
+}
+
 .New-button:hover {
   background-color: var(--blue-color);
   color: var(--white-color);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-color: var(--blue-color);
+  box-shadow: 0 8px 25px var(--shadow-medium);
   transform: translateY(-2px);
 }
 
@@ -120,13 +144,14 @@ body {
   border: none;
   background: var(--white-color);
   border-radius: 12px;
+  box-shadow: 0 4px 15px var(--shadow-light);
   transition: all 0.3s ease;
   overflow: hidden;
 }
 
 .Book-container:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 25px var(--shadow-medium);
 }
 
 .Book-cover {
@@ -160,7 +185,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-top: 1px solid var(--light-blue-color);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .Info-container {
@@ -170,16 +195,16 @@ body {
   align-items: center;
   justify-content: center;
   background: var(--light-blue-color);
-  border-top: 1px solid var(--light-blue-color);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .Info-link {
   font-size: 0.875rem;
   color: var(--blue-color);
-  background-color: var(--light-blue-color);
+  background: transparent;
   width: 100%;
   height: 100%;
-  font-weight: bold;
+  font-weight: 600;
   text-decoration: none;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -191,8 +216,9 @@ body {
 
 .Info-link:hover {
   color: var(--dark-blue-color);
-  text-decoration: underline;
-  font-size: 16px;
+  background: rgba(25, 118, 210, 0.1);
+  text-decoration: none;
+  font-size: 0.9rem;
 }
 
 .App-footer {
@@ -206,7 +232,8 @@ body {
   position: fixed;
   bottom: 0;
   left: 0;
-  border-top: 1px solid var(--light-blue-color);
+  box-shadow: 0 -2px 10px var(--shadow-light);
+  border-top: 1px solid rgba(25, 118, 210, 0.1);
   font-weight: 500;
-  font-size: 16px;
+  font-size: 0.9rem;
 }

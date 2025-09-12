@@ -10,15 +10,9 @@
   font-family: Helvetica, sans-serif
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-}
-
 .App-header {
-  background-color: var(--light-blue-color);
-  min-height: 12vh;
+  background-color:var(--light-blue-color);
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,89 +20,65 @@ body {
 }
 
 .App-name {
-  font-size: 2.5rem;
+  font-size: 30px;
   color: var(--blue-color);
 }
 
 .App-main {
-  background: var(--beige-color);
-  width: 100%;
+  background-color:var(--beige-color);
   min-height: 70vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 2rem 0;
+  align-items: center;  
 }
 
 .App-main-content {
-  background: var(--white-color);
+  background-color:var(--white-color);
   min-height: 10vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  border-radius: 12px;
-  margin: 1rem;
-  max-width: 1000px;
 }
 
 .Learn-more {
   color: var(--blue-color);
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.Learn-more:hover {
-  color: var(--dark-blue-color);
-  text-decoration: underline;
+  font-weight: bold;
 }
 
 .App-main-content-text {
   font-size: 16px;
   color: var(--dark-blue-color);
-  font-weight: 400;
-  text-align: center;
-  max-width: 600px;
-  line-height: 1.7;
 }
 
 .New-button {
-  background: var(--white-color);
+  background-color: var(--white-color);
   color: var(--blue-color);
-  border: 2px solid var(--light-blue-color);
-  border-radius: 16px;
+  border: 3px solid var(--light-blue-color);
+  border-radius: 10px;
   width: 200px;
   height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
+  cursor: pointer;  
   transition: all 0.3s ease;
-  font-size: 1.25rem;
-  font-weight: 600;
-  box-shadow: 0 4px 12px var(--shadow-light);
-  position: relative;
-  overflow: hidden;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .New-button:hover {
   background-color: var(--blue-color);
   color: var(--white-color);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  transform: translateY(-2px);
+  box-shadow: 0 0 10px 0 var(--blue-color);
 }
 
 .App-content-container {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: center;
-  gap: 2rem;
-  margin: 2rem 0;
-  width: 100%;
-  flex-wrap: wrap;
-  padding: 0 1rem;
+  gap: 20px;
 }
 
 .Book-container {
@@ -117,50 +87,30 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: none;
-  background: var(--white-color);
-  border-radius: 12px;
-  transition: all 0.3s ease;
-  overflow: hidden;
-}
-
-.Book-container:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border: 1px solid var(--dark-blue-color);
+  background-color: var(--blue-color);
 }
 
 .Book-cover {
   width: 100%;
   height: 100%;
-  position: relative;
-  overflow: hidden;
 }
 
 .Book-cover-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.Book-container:hover .Book-cover-image {
-  transform: scale(1.05);
 }
 
 .Book-author {
-  font-size: 0.875rem;
-  background: var(--white-color);
+  font-size: 14px;
+  background-color: var(--white-color);
   color: var(--dark-blue-color);
   margin: 0;
   width: 100%;
-  height: 60px;
-  font-weight: 600;
+  height: 50px;
+  font-weight: bold;
   text-align: center;
-  padding: 0.75rem 0.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-top: 1px solid var(--light-blue-color);
+  padding: 5px 0;
 }
 
 .Info-container {
@@ -169,12 +119,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--light-blue-color);
-  border-top: 1px solid var(--light-blue-color);
 }
 
 .Info-link {
-  font-size: 0.875rem;
+  font-size: 14px;
   color: var(--blue-color);
   background-color: var(--light-blue-color);
   width: 100%;
@@ -186,7 +134,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 0 0 12px 12px;
 }
 
 .Info-link:hover {
@@ -197,16 +144,8 @@ body {
 
 .App-footer {
   background-color: var(--light-blue-color);
-  color: var(--dark-blue-color);
-  width: 100%;
-  height: 8vh;
+  min-height: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  border-top: 1px solid var(--light-blue-color);
-  font-weight: 500;
-  font-size: 16px;
 }
